@@ -1,6 +1,8 @@
 import React from 'react';
 import './Example.css';
 
+
+
 /*
   Since this component shows code we include the https://prismjs.com/
   formatter. We invoke it by labelling code blocks with class="language-jsx"
@@ -103,7 +105,14 @@ class Example extends React.Component {
         <h1>Project 4 React.js Example</h1>
 
         <div className="motto-update">
-          {/* Your problem #1 motto displaying and updating widget goes here */}
+            <p>this.state.name</p>
+            <input //Declares an input
+            type = "test" //Specifies what data type input takes in
+            value = {this.state.motto} //Specifies what the value of this input will change
+            onChange ={(event) => this.setState ({motto: event.target.value})}
+            // ^Once an input is accepted this line will actually do the work and set the old value to the new value
+            placeholder = "Enter your motto (up to 20 characters)" //Text that will appear before input to prompt an answer
+            />
         </div>
 
         <p>
