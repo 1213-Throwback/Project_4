@@ -5,6 +5,6 @@ import './styles/main.css';
 import Example from './components/example/Example';
 
 ReactDOM.render(
-  <Example />,
-  document.getElementById('reactapp'),
+    <Example/>,
+  document.getElementById('reactapp')
 );

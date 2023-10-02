@@ -32,3 +32,8 @@ you use won't conflict with these names.
 .code-name {
   font-family: Courier New, monospace;
 }
+
+.NameTag{
+  font-size: 30px;
+  color: darkred;
+}

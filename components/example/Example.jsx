@@ -105,7 +105,6 @@ class Example extends React.Component {
         <h1>Project 4 React.js Example</h1>
 
         <div className="motto-update">
-            <p>this.state.name</p>
             <input //Declares an input
             type = "test" //Specifies what data type input takes in
             value = {this.state.motto} //Specifies what the value of this input will change
@@ -114,7 +113,8 @@ class Example extends React.Component {
             placeholder = "Enter your motto (up to 20 characters)" //Text that will appear before input to prompt an answer
             />
         </div>
-
+        <p className={"NameTag"}>Your name is: {this.state.name}</p>
+        <p className={"NameTag"}>Your moto is: {this.state.motto}</p>
         <p>
           This view is an example of a
           &nbsp;
